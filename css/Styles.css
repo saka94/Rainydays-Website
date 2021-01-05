@@ -1,11 +1,13 @@
-/* Colors */
+/* Colors*/
 colors {
   color: #181715;
   color: #efefef;
   color: #00a1ff;
   color: #0a3641;
   color: #bf1f3c;
+  color: #0a1f3c;
 }
+
 @font-face {
   font-family: "Rockwell";
   src: url(../Fonts/ROCK.TTF);
@@ -27,10 +29,20 @@ body {
   padding: 0;
 }
 
+section p {
+  margin: 0px;
+  font-family: "Rockwell";
+  font-size: 3em;
+  color: #bf1f3c;
+}
+
 /* Header and footer */
 .resize {
   max-width: 300px;
   max-height: 160px;
+  left: 50px;
+  position: relative;
+  padding: 10px 0px;
 }
 
 nav {
@@ -61,12 +73,11 @@ footer {
 .background {
   background-image: url("../images/joshua-earle--87JyMb9ZfU-unsplash\ 1920x1280.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   min-height: 1000px;
   background-position-x: right;
   background-position-y: bottom;
   position: relative;
-  background-blend-mode: ;
 }
 
 /* styling search bar */
@@ -79,11 +90,13 @@ footer {
 
 .Search {
   position: relative;
-  left: 700px;
+  left: 420px;
+  border: #181715;
+  border-width: 2px;
 }
 
 .Search button {
-  background-color: #0074d9;
+  background-color: #00a1ff;
   color: #f2f2f2;
   float: center;
   padding: 10px;
