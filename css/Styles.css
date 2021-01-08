@@ -39,10 +39,8 @@ section p {
 /* Header and footer */
 .resize {
   max-width: 300px;
-  max-height: 160px;
-  left: 50px;
+  max-height: 120px;
   position: relative;
-  padding: 10px 0px;
 }
 
 nav {
@@ -50,24 +48,41 @@ nav {
   align-items: center;
 }
 
+header {
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 header,
 footer {
   background-color: #bf1f3c;
-  color: #0a3641;
+  color: #0a1f3c;
 }
 
-.footernavigation {
+footer {
   display: flex;
+  gap: 20px;
   align-items: center;
-  padding: 10px;
+  padding: 10px 25px;
   font-size: 25px;
   font-family: Arial;
   font-weight: bolder;
 }
 
-footer {
-  display: flex;
+.logodivider {
+  width: 2px;
+  height: 80px;
+  background-color: #0a1f3c;
+  margin-left: 20px;
 }
+
+.homeicon {
+  font-size: 50px;
+  color: #0a1f3c;
+  padding-left: 25px;
+}
+
 /* background of the page */
 
 .background {
@@ -90,17 +105,16 @@ footer {
 
 .Search {
   position: relative;
-  left: 420px;
-  border: #181715;
-  border-width: 2px;
+  left: 350px;
+  border: 2px black;
 }
 
 .Search button {
-  background-color: #00a1ff;
-  color: #f2f2f2;
-  float: center;
-  padding: 10px;
-  margin-right: 2px;
+  background-color: transparent;
+  color: #0a1f3c;
+  position: relative;
+  top: 10px;
+  left: -61px;
   font-size: 30px;
   border: 20px;
   cursor: pointer;
