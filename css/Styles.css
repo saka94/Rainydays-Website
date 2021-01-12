@@ -83,6 +83,13 @@ footer {
   padding-left: 25px;
 }
 
+.cart {
+  font-size: 50px;
+  color: #0a1f3c;
+  position: relative;
+  left: 850px;
+}
+
 /* background of the page */
 
 .background {
@@ -90,8 +97,7 @@ footer {
   background-repeat: no-repeat;
   background-size: auto;
   min-height: 1000px;
-  background-position-x: right;
-  background-position-y: bottom;
+  background-position: center;
   position: relative;
 }
 
