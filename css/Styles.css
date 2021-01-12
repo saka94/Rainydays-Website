@@ -72,6 +72,7 @@ footer {
 
 footer a {
   text-decoration: none;
+  color: #0a1f3c;
 }
 
 .logodivider {
@@ -97,6 +98,10 @@ footer a {
 /* background of the page */
 
 .background {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  gap: 100px;
   background-image: url("../images/joshua-earle--87JyMb9ZfU-unsplash\ 1920x1280.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -108,14 +113,15 @@ footer a {
 /* main content */
 
 .products {
-  display: inline-flex;
-  justify-content: center;
-  padding-top: 250px;
+}
+
+.products-text {
+  text-decoration: none;
 }
 
 .products img {
-  max-width: 500px;
-  max-height: 500px;
+  width: 450px;
+  height: 450px;
 }
 
 .products h2 {
