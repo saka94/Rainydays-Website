@@ -29,13 +29,6 @@ body {
   min-height: 100vh;
 }
 
-section p {
-  margin: 0px;
-  font-family: "Rockwell";
-  font-size: 3em;
-  color: #bf1f3c;
-}
-
 /* Header and footer */
 .resize {
   max-width: 300px;
@@ -121,14 +114,16 @@ footer a {
 
 .products img {
   width: 450px;
-  height: 450px;
+  height: 350px;
 }
 
 .products h2 {
+  display: flex;
+  justify-content: center;
   font-family: "Rockwell";
   text-decoration: none;
   color: #bf1f3c;
-  font-size: 30px;
+  font-size: 35px;
 }
 /* styling search bar */
 .Search input[type="text"] {
@@ -153,4 +148,42 @@ footer a {
   font-size: 30px;
   border: 20px;
   cursor: pointer;
+}
+
+/* Contact page & About page */
+
+.logo-styling {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.h1-styling {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0a3641;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-styling {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
 }
