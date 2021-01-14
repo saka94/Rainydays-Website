@@ -32,19 +32,24 @@ body {
 /* Header and footer */
 .resize {
   max-width: 300px;
-  max-height: 120px;
-  position: relative;
+  max-height: 140px;
 }
 
 nav {
-  display: flex;
-  align-items: center;
 }
 
 header {
+  display: flex;
   padding-left: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.header-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 header,
@@ -73,6 +78,11 @@ footer a {
   height: 80px;
   background-color: #0a1f3c;
   margin-left: 20px;
+  margin-top: 30px;
+}
+
+.logo {
+  display: flex;
 }
 
 .homeicon {
@@ -84,8 +94,10 @@ footer a {
 .cart {
   font-size: 50px;
   color: #0a1f3c;
-  position: relative;
-  left: 850px;
+}
+
+.cart-pos {
+  margin-right: 40px;
 }
 
 /* background of the page */
@@ -104,9 +116,6 @@ footer a {
 }
 
 /* main content */
-
-.products {
-}
 
 .products-text {
   text-decoration: none;
@@ -134,8 +143,6 @@ footer a {
 }
 
 .Search {
-  position: relative;
-  left: 350px;
   border: 2px black;
 }
 
@@ -170,6 +177,7 @@ ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  max-width: 500px;
 }
 
 ul li {
@@ -187,3 +195,7 @@ ul li {
   font-size: 25px;
   font-weight: bolder;
 }
+
+/* Media quarys */
+
+@media only screen (max-width: 1080px);
