@@ -41,9 +41,6 @@ p {
   max-height: 140px;
 }
 
-nav {
-}
-
 header {
   display: flex;
   padding-left: 40px;
@@ -371,7 +368,7 @@ ul li {
 
 .logo-container {
   display: grid;
-  justify-content: center;
+  justify-items: center;
 }
 
 .logo-container img {
@@ -436,6 +433,35 @@ ul li {
   background-color: darkgreen;
 }
 
+/*checkout-complete page */
+
+.complete {
+  padding-bottom: 300px;
+}
+
+.checkout-complete {
+  display: grid;
+  font-size: 150px;
+  color: green;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.checkout-complete-container {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.check-circle {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo-container h1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Media quarys */
 
 @media (max-width: 1494px) {
@@ -459,8 +485,7 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .logo {
-  }
+
   .logodivider {
     display: none;
   }
