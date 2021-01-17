@@ -457,6 +457,7 @@ ul li {
 @media (max-width: 1070px) {
   header {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .logo {
   }
@@ -477,6 +478,7 @@ ul li {
   }
   .checkout-wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .product-container {
     margin-left: 40px;
