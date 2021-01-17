@@ -29,6 +29,12 @@ body {
   min-height: 100vh;
 }
 
+h2,
+h3,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Header and footer */
 .resize {
   max-width: 300px;
@@ -73,6 +79,10 @@ footer a {
   color: #0a1f3c;
 }
 
+footer a:hover {
+  color: #00a1ff;
+}
+
 .logodivider {
   width: 2px;
   height: 80px;
@@ -89,6 +99,14 @@ footer a {
   font-size: 50px;
   color: #0a1f3c;
   padding-left: 25px;
+}
+
+.homeicon:hover {
+  color: #00a1ff;
+}
+
+.search-button:hover {
+  color: #00a1ff;
 }
 
 .cart {
@@ -197,7 +215,7 @@ ul li {
   font-weight: bolder;
 }
 
-/* Product page women */
+/* Product page women & Men */
 
 .background-product-page {
   display: grid;
@@ -247,6 +265,232 @@ ul li {
   color: white;
 }
 
+.add-to-cart:hover {
+  background-color: #00a1ff;
+}
+
+/* Product spesific page*/
+
+.background-product-spesific {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 450px 328px 200px;
+  grid-template-rows: 450px;
+  padding-top: 140px;
+  gap: 50px;
+  background-image: url("../images/joshua-earle--87JyMb9ZfU-unsplash\ 1920x1280.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  background-position: center;
+  position: relative;
+}
+
+.product-spesific h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.product-spesific p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.big-cta {
+  padding: 5px 75px;
+}
+
+.cta-margin {
+  margin-top: auto;
+}
+
+.price {
+  text-align: center;
+}
+
+.Size-Chooser {
+  position: relative;
+  display: inline-block;
+}
+
+.size-dropdown {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.size-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.size-content option {
+  color: black;
+  padding: 10px 20px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15;
+  font-weight: bold;
+}
+
+.size-content option:hover {
+  background-color: #00a1ff;
+}
+
+.Size-Chooser:hover .size-content {
+  display: block;
+}
+
+.Size-Chooser:hover .size-dropdown {
+  background-color: #00a1ff;
+}
+
+/* Checkout page */
+
+.background-checkout-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+  gap: 100px;
+  background-image: url("../images/joshua-earle--87JyMb9ZfU-unsplash\ 1920x1280.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  background-position: center;
+  position: relative;
+}
+
+.logo-container {
+  display: grid;
+  justify-content: center;
+}
+
+.logo-container img {
+  max-width: 250px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.product-container img {
+  grid-column: -1/1;
+}
+
+.product-container h3 {
+  grid-column: 1;
+  font-size: 25px;
+}
+
+.checkout-wrapper {
+  display: flex;
+  gap: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 50px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.checkout-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form-input {
+  padding: 10px 40px;
+}
+
+.checkout-form-input-ccv {
+  padding: 15px 10px;
+}
+
+.checkout-form-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.button-container {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cta-color {
+  background-color: darkgreen;
+}
+
 /* Media quarys */
 
-@media only screen (max-width: 1080px);
+@media (max-width: 1494px) {
+  .background-product-page {
+    grid-template-columns: 225px 255px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .background-product-spesific {
+    grid-template-columns: 450px;
+  }
+
+  .size-content {
+    position: relative;
+  }
+}
+
+@media (max-width: 1070px) {
+  header {
+    flex-wrap: wrap;
+  }
+  .logo {
+  }
+  .logodivider {
+    display: none;
+  }
+  .background {
+    flex-wrap: wrap;
+  }
+  .Search input {
+    display: none;
+  }
+  .Search button {
+    left: 0px;
+    font-size: 50px;
+    color: #0a1f3c;
+    top: 0px;
+  }
+  .checkout-wrapper {
+    flex-wrap: wrap;
+  }
+  .product-container {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .background-product-page {
+    grid-template-columns: 225px;
+  }
+  .logo-styling {
+    width: 100%;
+  }
+  .product-container img {
+    width: 100%;
+  }
+}
