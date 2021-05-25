@@ -151,11 +151,12 @@ footer a:hover {
   font-size: 35px;
 }
 /* styling search bar */
-.Search input[type="text"] {
+.Search input {
   width: 500px;
   height: 50px;
   border-radius: 15px;
   border: 2px;
+  padding-left: 20px;
 }
 
 .Search {
