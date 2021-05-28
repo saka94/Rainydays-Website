@@ -11,8 +11,6 @@ colors {
 @font-face {
   font-family: "Rockwell";
   src: url(../Fonts/ROCK.TTF);
-  font-family: "Arial";
-  src: url(../Fonts/ARIAL.TTF);
 }
 
 Html {
@@ -39,6 +37,10 @@ p {
 .resize {
   max-width: 300px;
   max-height: 140px;
+}
+
+nav {
+  color: white;
 }
 
 header {
@@ -73,7 +75,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #0a1f3c;
+  color: white;
 }
 
 footer a:hover {
@@ -83,7 +85,7 @@ footer a:hover {
 .logodivider {
   width: 2px;
   height: 80px;
-  background-color: #0a1f3c;
+  background-color: white;
   margin-left: 20px;
   margin-top: 30px;
 }
@@ -94,7 +96,7 @@ footer a:hover {
 
 .homeicon {
   font-size: 50px;
-  color: #0a1f3c;
+  color: white;
   padding-left: 25px;
 }
 
@@ -108,20 +110,29 @@ footer a:hover {
 
 .cart {
   font-size: 50px;
-  color: #0a1f3c;
+  color: white;
+}
+
+.cart:hover {
+  color: #00a1ff;
 }
 
 .cart-pos {
   margin-right: 40px;
 }
 
+.header-h1 {
+  text-align: center;
+  font-family: "Rockwell";
+  font-size: 60px;
+  margin: 0px;
+  padding-top: 50px;
+  color: #0a1f3c;
+}
+
 /* background of the page */
 
 .background {
-  display: flex;
-  justify-content: center;
-  padding-top: 200px;
-  gap: 100px;
   background-image: url("../images/joshua-earle--87JyMb9ZfU-unsplash\ 1920x1280.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -133,13 +144,24 @@ footer a:hover {
 
 /* main content */
 
+.Home-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 150px;
+}
+
 .products-text {
   text-decoration: none;
 }
 
 .product-pic-home {
-  width: 450px;
-  height: 350px;
+  width: 100%;
+  max-height: 400px;
+}
+
+.product-pic-home-w {
+  width: 100%;
 }
 
 .products h2 {
@@ -493,6 +515,15 @@ ul li {
   .background {
     flex-wrap: wrap;
   }
+
+  .Home-container {
+    flex-wrap: wrap;
+  }
+
+  .search-button {
+    color: white;
+  }
+
   .Search input {
     display: none;
   }
