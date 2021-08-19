@@ -198,6 +198,11 @@ footer a:hover {
 
 /* main content */
 
+.alert {
+  padding: 30px;
+  background-color: darkred;
+}
+
 .Home-container {
   display: grid;
   grid-template-columns: 500px 500px;
