@@ -2,11 +2,12 @@ const productContainer = document.querySelector(".Product-container")
 
 const url = "http://kalmer.one/rainy-days/wp-json/wc/store/products?per_page=100";
 
+const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + url;
 
 async function fetchProducts() {
     
     try {
-        const response = await fetch(url)
+        const response = await fetch(corsEnabledUrl)
 
         const results = await response.json();
 

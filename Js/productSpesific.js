@@ -13,12 +13,14 @@ console.log(id);
 
 const url = "http://kalmer.one/rainy-days/wp-json/wc/store/products/" + id;
 
-console.log(url);
+const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + url;
+
+console.log(corsEnabledUrl);
 
 async function fetchDetails() {
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(corsEnabledUrl);
         const details = await response.json();
 
         console.log(details);
