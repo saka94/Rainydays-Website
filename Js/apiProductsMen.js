@@ -7,7 +7,7 @@ const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + url;
 async function fetchProducts() {
     
     try {
-        const response = await fetch(corsEnabledUrl
+        const response = await fetch(corsEnabledUrl);
 
         const results = await response.json();
 
