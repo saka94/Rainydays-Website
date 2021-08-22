@@ -666,6 +666,28 @@ input {
   padding-right: 20px;
 }
 
+/* Loading */
+
+.loading {
+  justify-content: center;
+  border: 50px solid lightgray;
+  border-top: 50px solid black;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media quarys */
 
 @media (max-width: 1494px) {

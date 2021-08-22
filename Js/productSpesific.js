@@ -25,6 +25,8 @@ async function fetchDetails() {
 
         console.log(details);
 
+        detailContainer.innerHTML = "";
+
         createHtml(details);
 
     }
