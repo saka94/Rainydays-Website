@@ -191,7 +191,7 @@ footer a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 1116px;
   background-position: center;
   position: relative;
 }
@@ -454,7 +454,6 @@ input {
 }
 
 .add-to-cart {
-  grid-column: -1/1;
   font-family: "Rockwell";
   font-size: 30px;
   border-radius: 16px;
@@ -564,7 +563,7 @@ input {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 1116px;
   background-position: center;
   position: relative;
 }
