@@ -264,7 +264,7 @@ footer a:hover {
   background-color: transparent;
   color: #0a1f3c;
   position: relative;
-  top: 10px;
+  top: 5px;
   left: -61px;
   font-size: 30px;
   border: 20px;
@@ -321,7 +321,7 @@ ul li {
 .form-container {
   max-width: 850px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 .form {
