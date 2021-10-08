@@ -159,6 +159,7 @@ footer a:hover {
 
 .search-button:hover {
   color: #00a1ff;
+  cursor: pointer;
 }
 
 .cart {
@@ -168,11 +169,25 @@ footer a:hover {
 
 .cart:hover {
   color: #00a1ff;
+  cursor: pointer;
 }
 
 .cart-pos {
   margin-right: 40px;
   margin-top: 4px;
+}
+
+.bars {
+  position: relative;
+  top: -10px;
+  font-size: 50px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.bars:hover {
+  color: #00a1ff;
+  cursor: pointer;
 }
 
 .header-h1 {
