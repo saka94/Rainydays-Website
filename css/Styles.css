@@ -75,7 +75,6 @@ li a {
 }
 
 .font:hover {
-  text-decoration: underline;
   color: #00a1ff;
 }
 
@@ -340,6 +339,8 @@ ul li {
 }
 
 .form {
+  display: grid;
+  gap: 50px;
   background-color: white;
   padding: 40px;
   border-radius: 20px;
